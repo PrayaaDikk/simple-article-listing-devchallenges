@@ -1,0 +1,17 @@
+{
+	"name": "simple-article-listing",
+	"version": "1.0.0",
+	"description": "![Thumbnail for the Simple Article Listing coding challenge](./thumbnail.jpg)",
+	"license": "ISC",
+	"author": "Fadil Prayadika",
+	"type": "module",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "npx tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch"
+	},
+	"dependencies": {
+		"@tailwindcss/cli": "^4.0.7",
+		"tailwindcss": "^4.0.7"
+	}
+}

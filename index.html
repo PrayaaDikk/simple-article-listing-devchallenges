@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Simple Article Listing" />
+
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- stylesheet -->
+		<link rel="stylesheet" href="./src/styles/output.css" />
+
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+
+		<title>Simple Article Listing</title>
+	</head>
+	<body>
+		<header class="px-8 py-10 text-center">
+			<h1 class="text-3xl max-w-150 mx-auto">
+				We release interesting articles about technology
+			</h1>
+			<div class="flex justify-center my-10">
+				<img src="/src/assets/Seperator.svg" alt="separator" />
+			</div>
+		</header>
+
+		<main class="grid grid-cols-1 gap-12 max-w-183 mx-auto">
+			<article class="flex items-center gap-12">
+				<figure>
+					<img
+						src="/src/assets/photo_1.png"
+						alt="Cloud Computing Illustration"
+						class="rounded-xl"
+					/>
+				</figure>
+				<div class="flex flex-col gap-4">
+					<h2 class="text-xl">
+						Unlocking the Power of Cloud Computing: A Guide to
+						Scalable Solutions
+					</h2>
+					<time
+						class="text-sm font-medium text-gray"
+						datetime="2024-11-12"
+					>
+						November 12, 2024
+					</time>
+				</div>
+			</article>
+
+			<article class="flex items-center gap-12">
+				<figure>
+					<img
+						src="/src/assets/photo_2.png"
+						alt="Machine Learning Representation"
+						class="rounded-xl"
+					/>
+				</figure>
+				<div class="flex flex-col gap-4">
+					<h2 class="text-xl">
+						The Future of AI: How Machine Learning is
+						Revolutionizing Industries
+					</h2>
+					<time
+						class="text-sm font-medium text-gray"
+						datetime="2024-11-12"
+					>
+						November 12, 2024
+					</time>
+				</div>
+			</article>
+
+			<article class="flex items-center gap-12">
+				<figure>
+					<img
+						src="/src/assets/photo_3.png"
+						alt="5G Network Impact"
+						class="rounded-xl"
+					/>
+				</figure>
+				<div class="flex flex-col gap-4">
+					<h2 class="text-xl">
+						The Impact of 5G on Business: How Faster Networks are
+						Transforming the Way We Work
+					</h2>
+					<time
+						class="text-sm font-medium text-gray"
+						datetime="2024-11-12"
+					>
+						November 12, 2024
+					</time>
+				</div>
+			</article>
+		</main>
+	</body>
+</html>

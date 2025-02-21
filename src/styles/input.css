@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+	--font-poppins: "Poppins", sans-serif;
+
+	--color-white: #f8fafc;
+	--color-black: #000000;
+	--color-gray: #4d5562;
+}
+
+@layer base {
+	body {
+		@apply font-poppins font-semibold text-black bg-white;
+	}
+}
