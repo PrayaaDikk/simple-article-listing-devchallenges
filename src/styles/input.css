@@ -9,6 +9,10 @@
 }
 
 @layer base {
+	html {
+		@apply max-sm:text-[80%];
+	}
+	
 	body {
 		@apply font-poppins font-semibold text-black bg-white;
 	}
