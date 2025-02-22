@@ -12,7 +12,7 @@
 
 @layer base {
 	html {
-		@apply max-xs:text-[60%] xs:text-[80%];
+		@apply max-xs:text-[60%] xs:text-[80%] sm:text-[100%];
 	}
 
 	body {

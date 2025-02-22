@@ -617,6 +617,9 @@
     @media (width >= 480px) {
       font-size: 80%;
     }
+    @media (width >= 40rem) {
+      font-size: 100%;
+    }
   }
   body {
     background-color: var(--color-white);
