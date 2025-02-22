@@ -6,14 +6,16 @@
 	--color-white: #f8fafc;
 	--color-black: #000000;
 	--color-gray: #4d5562;
+
+	--breakpoint-xs: 480px;
 }
 
 @layer base {
 	html {
-		@apply max-sm:text-[80%];
+		@apply max-xs:text-[60%] xs:text-[80%];
 	}
-	
+
 	body {
-		@apply font-poppins font-semibold text-black bg-white;
+		@apply font-poppins bg-white font-semibold text-black;
 	}
 }

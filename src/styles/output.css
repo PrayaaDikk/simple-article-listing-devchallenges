@@ -376,6 +376,7 @@
     );
     --font-poppins: "Poppins", sans-serif;
     --color-gray: #4d5562;
+    --breakpoint-xs: 480px;
   }
 }
 @layer base {
@@ -520,20 +521,11 @@
   }
 }
 @layer utilities {
-  .collapse {
-    visibility: collapse;
-  }
-  .relative {
-    position: relative;
-  }
   .mx-auto {
     margin-inline: auto;
   }
   .my-10 {
     margin-block: calc(var(--spacing) * 10);
-  }
-  .block {
-    display: block;
   }
   .flex {
     display: flex;
@@ -541,29 +533,20 @@
   .grid {
     display: grid;
   }
-  .inline-flex {
-    display: inline-flex;
+  .w-full {
+    width: 100%;
   }
-  .list-item {
-    display: list-item;
-  }
-  .table {
-    display: table;
+  .max-w-48 {
+    max-width: calc(var(--spacing) * 48);
   }
   .max-w-150 {
     max-width: calc(var(--spacing) * 150);
   }
-  .max-w-180 {
-    max-width: calc(var(--spacing) * 180);
-  }
-  .max-w-183 {
-    max-width: calc(var(--spacing) * 183);
-  }
   .max-w-185 {
     max-width: calc(var(--spacing) * 185);
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .min-w-32 {
+    min-width: calc(var(--spacing) * 32);
   }
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
@@ -577,6 +560,9 @@
   .flex-col {
     flex-direction: column;
   }
+  .content-center {
+    align-content: center;
+  }
   .items-center {
     align-items: center;
   }
@@ -586,18 +572,11 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
-  .gap-8 {
-    gap: calc(var(--spacing) * 8);
-  }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
   }
   .rounded-xl {
     border-radius: var(--radius-xl);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
@@ -619,9 +598,8 @@
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
   }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
+  .text-\[1\.25em\] {
+    font-size: 1.25em;
   }
   .font-medium {
     --tw-font-weight: var(--font-weight-medium);
@@ -630,15 +608,16 @@
   .text-gray {
     color: var(--color-gray);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
 }
 @layer base {
+  html {
+    @media (width < 480px) {
+      font-size: 60%;
+    }
+    @media (width >= 480px) {
+      font-size: 80%;
+    }
+  }
   body {
     background-color: var(--color-white);
     font-family: var(--font-poppins);
@@ -698,17 +677,7 @@
   inherits: false;
   initial-value: skewY(0);
 }
-@property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
-}
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
 }
